@@ -1,0 +1,249 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+// Variables
+$gray-7: #ebebeb;
+$gray-8: #999;
+$sidebar-sticky: false !default;
+
+/* abril-fatface-regular - latin */
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
+       url('../fonts/abril-fatface-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/abril-fatface-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@import "hydeout";
+
+// Images
+figure{
+  margin: 0;
+
+  figcaption {
+    font-size: smaller;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Hide image in excerpt
+.index figure { display: none; }
+
+// Hide terminal screenshots for anything but desktop
+@media (max-width: 1210px) {
+  img.terminal {
+    display: none;
+  }
+}
+
+// Lager sidebar icons
+a svg, .icon svg { width: auto; }
+#sidebar-icon-links { margin-left: -0.5em; }
+
+// Old comments
+// https://css-tricks.com/snippets/wordpress/base-threaded-comments-styling/
+ol.commentlist{ margin:0 0 0.5rem 0; padding:0; text-indent:0; float:left; font-size: .8rem; width:100%; list-style: none; }
+ol.commentlist p{ margin-bottom:8px; clear: both; }
+ol.commentlist li{}
+ol.commentlist li.alt{}
+ol.commentlist li.bypostauthor{}
+ol.commentlist li.byuser{}
+ol.commentlist li.comment-author-admin{}
+ol.commentlist li.comment{ margin-bottom:15px; padding:1em; }
+ol.commentlist li.comment div.comment-author{}
+ol.commentlist li.comment div.vcard{}
+ol.commentlist li.comment div.vcard cite.fn{ font-style: normal; }
+ol.commentlist li.comment div.vcard cite.fn a.url{}
+ol.commentlist li.comment img.emoji { max-width: 16px; display: inline; margin: 0; }
+ol.commentlist li.comment div.vcard img{ position:relative; float:left; margin: 0 20px 15px 0; }
+ol.commentlist li.comment div.vcard img.avatar{}
+ol.commentlist li.comment div.vcard img.avatar-32{}
+ol.commentlist li.comment div.vcard img.photo{}
+ol.commentlist li.comment div.vcard span.says{}
+ol.commentlist li.comment div.commentmetadata{}
+ol.commentlist li.comment .comment-meta, ol.commentlist li.comment ul.children .comment-meta {}
+ol.commentlist li.comment div.comment-meta a{}
+ol.commentlist li.comment ul{  }
+ol.commentlist li.comment div.reply{}
+ol.commentlist li.comment div.reply a{}
+ol.commentlist li.comment ul.children{padding: 0.6em 0 0 0;}
+ol.commentlist li.comment ul.children li{list-style:none}
+ol.commentlist li.comment ul.children li.alt{}
+ol.commentlist li.comment ul.children li.bypostauthor{}
+ol.commentlist li.comment ul.children li.byuser{}
+ol.commentlist li.comment ul.children li.comment{}
+ol.commentlist li.comment ul.children li.comment-author-admin{}
+ol.commentlist li.comment ul.children li.depth-2{ border-left:5px solid #555; margin:0 0 .25em .25em; padding-bottom: 0.2em; }
+ol.commentlist li.comment ul.children li.depth-3{ border-left:5px solid #999; margin:0 0 .25em .25em; }
+ol.commentlist li.comment ul.children li.depth-4{ border-left:5px solid #bbb; margin:0 0 .25em .25em; }
+ol.commentlist li.comment ul.children li.depth-5{}
+ol.commentlist li.comment ul.children li.odd{}
+ol.commentlist li.even{ background:#fff; }
+ol.commentlist li.odd{ background:#f6f6f6; }
+ol.commentlist li.parent{ border-left:5px solid #111; }
+ol.commentlist li.thread-alt{ }
+ol.commentlist li.thread-even{}
+ol.commentlist li.thread-odd{}
+
+// Onebox
+aside.onebox {
+  border: 5px solid $gray-7;
+  padding: 12px 25px 0px 12px;
+  font-size: 1em;
+  margin-bottom: .8rem;
+
+  header a{
+    color: $gray-8;
+    text-decoration: none;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .onebox-body img{
+    display: none;
+  }
+
+  .onebox-body h3{
+    margin-top: .5rem;
+    font-size: 1.25rem;
+  }
+
+  .onebox-metadata {
+    display: none;
+  }
+}
+
+// Code highlighting
+// Theme: monokai
+// https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css
+.highlight pre { background-color: #272822; }
+.highlight .hll { background-color: #272822; }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+.highlight .gh { } /* Generic Heading & Diff Header */
+.highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+.highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+// My modifications
+.highlight .cm { color: #fff } /* Comment.Multiline */
+.highlight .cp { color: #fff } /* Comment.Preproc */
+.highlight .c1 { color: #fff } /* Comment.Single */
+.highlight .cs { color: #fff } /* Comment.Special */
+.highlight, .highlight pre { background-color: #202020; }
+.highlight{ padding: 0.5rem; }
+code { color: #515151; }
+pre code { color: #fff; font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace; }
+
+.highlight, .highlight pre {
+  background-color: #242c3f !important;
+  box-shadow: 2px 4px 25px rgba(36,44,63,0.5);
+}
+
+// Alters sidebar color
+body {
+  background-attachment: fixed;
+  background-color: #242c3f;
+  // background-image: linear-gradient(to bottom, #323232, #0e0e0e);
+  background-image: none;
+}
+
+.shadow {
+  box-shadow: 2px 4px 25px rgba(36, 44, 63, 0.5);
+}
+
+// Outdated content warning
+.outdated-content {
+  background: #ffff99;
+  border: 1px solid #242c3f;
+  border-radius: 3px;
+  margin: 32px 0px 16px;
+  padding: 16px 10px 16px 5px;
+
+  p {
+    margin:  0 0 0 15px;
+    padding:  0;
+  }
+
+  img {
+    display: inline;
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 4px;
+    width: 22px;
+
+    @media only screen and (max-width: 783px) {
+      width: 18px;
+      top: 3px;
+    }
+  }
+}
+
+// Shadow on images for newer posts
+.image_shadow img {
+  box-shadow: 2px 4px 25px rgba(36, 44, 63, 0.5);
+}

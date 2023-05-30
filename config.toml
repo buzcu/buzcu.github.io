@@ -1,4 +1,4 @@
-baseURL = 'http://buzcu.github.io/'
+baseURL = 'http://gorkembuzcu.com.tr/'
 languageCode = 'en-us'
 title = 'My Shitty Blog'
 theme = 'ananke'

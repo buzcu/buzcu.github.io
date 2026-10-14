@@ -1,14 +1,14 @@
 ---
-title: Iletisim
+title: İletişim
 featured_image: '/images/guvercin.png'
 omit_header_text: true
-description: Mesajinizi buradan yaziniz!
+description: Mesajınızı buradan yazınız!
 type: page
 menu: main
 
 ---
 
-Bu Turkce iletisim formu.
+Bu Türkçe iletişim formu.
 
 
 {{< form-contact action="https://formspree.io/f/mjvddzbb"  >}}

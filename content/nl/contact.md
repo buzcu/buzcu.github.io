@@ -9,4 +9,6 @@ menu: main
 ---
 
 
+Je weet wat je moet doen.
+
 {{< form-contact action="https://formspree.io/f/mjvddzbb"  >}}

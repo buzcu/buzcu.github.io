@@ -1,9 +1,8 @@
 ---
-title: "El blogunu gormeyen kendininkini de blog sanarmis"
+title: "El blogunu görmeyen kendininkini de blog sanırmış"
 
-description: "Blog yazmayi sevmeyen benim blog websitem
- Parise de bayilmiyorum ama arka planda guzel duruyor."
-theme_version: '2.8.2'
+description: "Blog yazmayı sevmeyen benim blog websitem
+ Paris'e de bayılmıyorum ama arka planda güzel duruyor."
 cascade:
   featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 ---

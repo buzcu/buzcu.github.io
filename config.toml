@@ -1,8 +1,7 @@
-baseURL = 'http://gorkembuzcu.com.tr/'
+baseURL = 'https://gorkembuzcu.com.tr/'
 locale = 'en-us'
 title = 'Titles are overrated'
 theme = 'ananke'
-resourceDir = "../resources"
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
@@ -20,7 +19,7 @@ enableRobotsTXT = true
     contentDir = "content/tr"
   [languages.nl]
     title = "Gorkem's Blogje"
-    weight = 2
+    weight = 3
     contentDir = "content/nl"
 
 [pagination]

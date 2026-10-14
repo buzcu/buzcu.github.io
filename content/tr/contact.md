@@ -1,6 +1,6 @@
 ---
-title: Contact
-featured_image: ''
+title: Iletisim
+featured_image: '/images/guvercin.png'
 omit_header_text: true
 description: Mesajinizi buradan yaziniz!
 type: page

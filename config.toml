@@ -1,13 +1,11 @@
 baseURL = 'http://gorkembuzcu.com.tr/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Titles are overrated'
 theme = 'ananke'
 resourceDir = "../resources"
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
 enableRobotsTXT = true
 
 [languages]
@@ -25,6 +23,9 @@ enableRobotsTXT = true
     weight = 2
     contentDir = "content/nl"
 
+[pagination]
+  pagerSize = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
@@ -39,6 +40,8 @@ enableRobotsTXT = true
   background_color_class = "bg-black"
   recent_posts_number = 3
 
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/buzcug"
+[params.ananke.social.follow]
+  networks = ["twitter"]
+
+[params.ananke.social.twitter]
+  username = "buzcug"

@@ -1,5 +1,5 @@
 ---
-date: 2026-10-14T10:58:08-04:00
+date: 2026-10-14T10:58:08+02:00
 description: "The Grand First Post"
 featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
 tags: ["hello"]

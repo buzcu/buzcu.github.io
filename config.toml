@@ -1,6 +1,6 @@
 baseURL = 'http://gorkembuzcu.com.tr/'
 languageCode = 'en-us'
-title = 'My Shitty Blog'
+title = 'Titles are overrated'
 theme = 'ananke'
 resourceDir = "../resources"
 
@@ -35,7 +35,7 @@ enableRobotsTXT = true
   author = ""
   favicon = ""
   site_logo = ""
-  description = "The last blog site I'll ever need. Maybe."
+  description = "I wish this was a travel blog"
   background_color_class = "bg-black"
   recent_posts_number = 3
 
